@@ -36,7 +36,9 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip    
   song_found = false
+  
   check = Integer(user_input) rescue false
+  
   if check
     if songs[user_input.to_i-1]
       play_song = songs[user_input.to_i-1]
